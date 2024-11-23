@@ -1,8 +1,8 @@
 FROM node:20-alpine
 
-WORKDIR /app
+WORKDIR /nextjs
 
-COPY ./package.json /app
+COPY . .
 
 RUN npm install
 RUN npm run build
